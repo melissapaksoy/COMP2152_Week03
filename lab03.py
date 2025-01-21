@@ -1,11 +1,12 @@
 import random
 
-# Setup
+# Dice options using list() and range()
 diceOptions = list(range(1, 7))
+# Weapons array
 weapons = ['Fist', 'Knife', 'Club', 'Gun', 'Bomb', 'Nuclear Bomb']
 print("Available Weapons:", ', '.join(weapons))
 
-# Inputs
+#Input
 combatStrength = max(1, min(6, int(input("Hero strength (1-6): "))))
 mCombatStrength = max(1, min(6, int(input("Monster strength (1-6): "))))
 
