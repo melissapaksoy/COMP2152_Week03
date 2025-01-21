@@ -48,7 +48,7 @@ for j in range(1, 21, 2): # Stimulation of 20 rounds, steppibg by 20
         print("It's a tie round!")
 
     if j == 11:
-        print("\n Battle Truce declread in Round 11. Game Over!")
+        print("\n Battle Truce declerad in Round 11. Game Over!")
         break
     if j != 11:
-        print("\n Battle conluded after 20 rounds!")
+        print("\n Battle concluded after 20 rounds!")
