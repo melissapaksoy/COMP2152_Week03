@@ -13,10 +13,15 @@ combatStrength = int(input("Enter your combat strength(1-6): "))
 if combatStrength < 1 or combatStrength > 6:
     print("Invalid input. Combat strength should be between 1 and 6.")
     combatStrength = 1 # Default value for invalid value
-combatStrength = max(1, min(6, int(input("Hero strength (1-6): "))))
-mCombatStrength = max(1, min(6, int(input("Monster strength (1-6): "))))
 
-# # Battle
+#Input combat strength for the monster
+mCombatStrength = int(input("Enter the monster's combat strength(1-6): "))
+if mCombatStrength < 1 or mCombatStrength > 6:
+    print("Invalid input. Monster combat strength should be between 1 and 6.")
+    mCombatStrength = 1 # Default value for invalid value
+
+# Battle
+
 # for j in range(1, 21, 2):
 #     heroRoll, monsterRoll = random.choice(diceOptions), random.choice(diceOptions)
 #     heroTotal, monsterTotal = combatStrength + heroRoll, mCombatStrength + monsterRoll
