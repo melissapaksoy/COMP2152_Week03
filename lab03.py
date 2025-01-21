@@ -20,13 +20,23 @@ if mCombatStrength < 1 or mCombatStrength > 6:
     print("Invalid input. Monster combat strength should be between 1 and 6.")
     mCombatStrength = 1 # Default value for invalid value
 
-# Battle
+# Simulate Battle rounds 
+for j in range(1, 21, 2): # Stimulation of 20 rounds, steppibg by 20
+    # Dice roll for hero and monster
+    heroRoll = random.choice(diceOptions)
+    monsterRoll = random.choice(diceOptions)
 
-# for j in range(1, 21, 2):
-#     heroRoll, monsterRoll = random.choice(diceOptions), random.choice(diceOptions)
-#     heroTotal, monsterTotal = combatStrength + heroRoll, mCombatStrength + monsterRoll
-#     print(f"Round {j}: Hero({weapons[heroRoll - 1]})={heroTotal}, Monster({weapons[monsterRoll - 1]})={monsterTotal}.", 
-#           "Hero wins!" if heroTotal > monsterTotal else "Monster wins!" if heroTotal < monsterTotal else "Tie!")
-#     if j == 11:
-#         print("Battle Truce declared. Game Over!")
-#         break
+# Calculate the weapons
+    heroWeapon = weapons[heroRoll - 1]
+    monsterWeapon= weapons[monsterRoll - 1]
+
+# Calculate total strength
+    heroTotal = combatStrength + heroRoll
+    monsterTotal = mCombatStrength + monsterRoll
+
+    # Print round results
+    print(f"\nRound {j} Hero rolled {heroRoll}, and Monster rolled {monsterRoll}")
+    print(f"Hero selected {heroWeapon} and Monster selected {monsterWeapon}")
+    print(f"Hero total strength: {heroTotal}, Monster total strength: {monsterTotal}")
+
+# 
