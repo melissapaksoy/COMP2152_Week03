@@ -47,10 +47,6 @@ for j in range(1, 21, 2): # Stimulation of 20 rounds, steppibg by 20
     else:
         print("It's a tie round!")
 
-        if j if j == 11:
-        print("\n Battle Truce declread in Round 11. Game Over!")
-        break
-
     if j == 11:
         print("\n Battle Truce declread in Round 11. Game Over!")
         break
